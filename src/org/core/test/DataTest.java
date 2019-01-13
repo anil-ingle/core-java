@@ -6,12 +6,12 @@ public class DataTest {
     float f = 4.0f;
     long l=20;
     short s=40;
-    short s1=220;    // -32668 to 32667
+    short s1=220;    
     byte b=-128;   // -128 to +127
     char c='a';
     char c1=98;
     String name="Jay";// correct
-    String name1=new String("Jay"); // normally no one use
+    String name1=new String("Jay"); 
 
 
     // static int second=40;
@@ -32,7 +32,7 @@ public class DataTest {
         DataTest test = new DataTest();
         System.out.println("test " + test.number + "   d   " + test.d + "  f  " + test.f);
         System.out.println(test.third);
-        test.m1();//non static object
+        test.m1();
     }
 
 
