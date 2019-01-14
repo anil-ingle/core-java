@@ -5,7 +5,7 @@ public class JavaDemo$ {
     JavaDemo$() {
         System.out.println("This is constructor");
     }
-
+// static bolock
     static {
         System.out.println("This is static boloc");
     }
