@@ -13,3 +13,8 @@ public class LadderIfDemo {
         }
     }
 }
+
+
+// assignment Write a program test the number if number divided by 7 then check number is even or odd
+
+// example number is 28 is divided by 7 and it is even number another is consider 35 is divided by 7 and it is odd number
