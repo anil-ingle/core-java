@@ -7,7 +7,7 @@ public class SwitchDemo {
 
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter grade....");
-        String grade = sc.next();
+        String grade = sc.next(); // 1.7 onwards
         switch (grade) { // var/exp
             case "A":
                 System.out.println("grade A");
