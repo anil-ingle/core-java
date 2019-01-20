@@ -14,3 +14,4 @@ public class SumOfDigitTest {
         System.out.println("sum -->"+sum);
     }
 }
+ // 153=1+125+27=152+1=153
