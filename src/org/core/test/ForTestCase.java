@@ -14,11 +14,23 @@ public class ForTestCase {
 //            System.out.println("adi");
 //            i++;
 //        }
-//        final int x=1,y=2;
-//       // x=5; reassignment not possible
+        final int x=1,y=2;
+       // x=5; //reassignment not possible
 //        for(;x>y;){
 //            System.out.println(" jay");
 //        }
 //        System.out.println(" anil");
+
+        label: for(int i=0;i<20;i++) {
+            if (i == 7) {
+                break label;
+            }
+        }
+//        int y=1;
+        l:
+        if(y==1){
+            break l;
+        }
+        System.out.println("end of l");
     }
 }

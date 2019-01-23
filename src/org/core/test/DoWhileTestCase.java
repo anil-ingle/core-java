@@ -12,6 +12,8 @@ public class DoWhileTestCase {
 
 //        for(int i=0;false;i++){
 //            System.out.println("anil");
+        for(;;)
+            System.out.println("dslkfjsk");
 //        }
     }
 }
