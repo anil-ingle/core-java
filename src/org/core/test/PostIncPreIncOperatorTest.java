@@ -16,7 +16,27 @@ public class PostIncPreIncOperatorTest {
 //        System.out.println(p+"   "+q);
 
         int a=10,b=20,c=30;
-        int x=--a+ b++ ;
+       // int x=--a+ b++ ;
+        //System.out.println("x "+x+" a "+a +" b "+b);
+        byte num=10;
+        num=(byte)(num+1); // short+int=int
+        num++;// internally type cast
+        //<-- 29
+        // --> 31
+//        int y=++a + --a+a++;
+//        System.out.println("x "+y +" a "+a);
+        final int z=10;
+       // z++; const/final --> we cant do post and pre operation.
+         float f=10.0f;
+        f++;
+       // System.out.println(f);
+        boolean booleanValue=true;
+       // booleanValue++;  except boolean we can perform inc dec any primitive typechar
+        char ch='b';
+        ch++;
+        System.out.println(ch);
+
+
 
     }
 }
