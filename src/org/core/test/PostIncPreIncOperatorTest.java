@@ -4,7 +4,7 @@ public class PostIncPreIncOperatorTest {
     public static void main(String[] args) {
       //  int a=10;
 //        int b=++a;// a++==> a=a+a
-//        System.out.println(a+"   "+b);
+//        System.out.println(a+"   "+b);  output 11   11
 //        int b=--a;
 //        System.out.println(a+"   "+b);
 //
@@ -31,7 +31,7 @@ public class PostIncPreIncOperatorTest {
         f++;
        // System.out.println(f);
         boolean booleanValue=true;
-       // booleanValue++;  except boolean we can perform inc dec any primitive typechar
+       // booleanValue++;  except boolean we can perform inc dec any primitive
         char ch='b';
         ch++;
         System.out.println(ch);
