@@ -10,10 +10,29 @@ public class ArrayAvgSumTest {
             System.out.println("enter mark");
             marks[i]=sc.nextInt();
         }
+
+        boolean isFail=true,isValid=true;
+        for(int i=0;i<marks.length;i++) {
+            if(marks[i]>=0 && marks[i]<=100) {
+                if (marks[i] < 35) {
+                    isFail = false;
+                    break;
+                }
+            }else{
+                System.out.println("invalid data");
+                isValid=false;
+                break;
+            }
+        }
         int sum=0;
         for(int i=0;i<marks.length;i++) {
+
             sum=sum+marks[i];// marks[i]==> value
         }
-        System.out.println(sum);
+        if(isValid){
+            double avg=sum/marks.length;
+            System.out.println("avg"+avg);
+        }
+
     }
 }
