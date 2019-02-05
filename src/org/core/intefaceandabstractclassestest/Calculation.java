@@ -1,7 +1,7 @@
 package org.core.intefaceandabstractclassestest;
 
 public interface Calculation {
-    void add(int x, int y);
+     void add(int x, int y);
     void sub(int x, int y);
     void mul(int x, int y);
 }
