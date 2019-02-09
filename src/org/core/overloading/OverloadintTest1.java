@@ -2,7 +2,7 @@ package org.core.overloading;
 
 public class OverloadintTest1 {
 
-    public void add(int x, int y) {
+    public void add(int x, int y) { // int x, int y-> parameter
         System.out.println("add with 2 arg  " + (x + y));
     }
 
@@ -17,8 +17,9 @@ public class OverloadintTest1 {
 
     public static void main(String[] args) {
         OverloadintTest1 test = new OverloadintTest1();
-       // test.add(20, 30); // calling
-         test.add(10,20,30,40); // calling
-        //test.add();
+         // test.add(20, 30); // calling  // argument
+         ///test.add(10,20,30); // calling
+            //test.add();// no argu
+
     }
 }

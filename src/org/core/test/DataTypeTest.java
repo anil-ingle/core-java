@@ -1,6 +1,6 @@
 package org.core.test;
 
-public class DataTest {
+public class DataTypeTest {
     int number;
     double d = 10.2;
     float f = 4.0f;
@@ -29,7 +29,7 @@ public class DataTest {
     }
 
     public static void main(String[] args) {
-        DataTest test = new DataTest();
+        DataTypeTest test = new DataTypeTest();
         System.out.println("test " + test.number + "   d   " + test.d + "  f  " + test.f);
         System.out.println(test.third);
         test.m1();
