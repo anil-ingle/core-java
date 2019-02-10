@@ -11,7 +11,7 @@ public class IfDemo {
     /*
     assignment:
       Just check number grater than 50 or not
-      note: using Sacnner calss for dynamic input
+      note: using Sacnner class for dynamic input
 
      */
 }
