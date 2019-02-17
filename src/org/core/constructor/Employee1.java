@@ -1,8 +1,10 @@
 package org.core.constructor;
 
 class Sample1 {
-    Sample1(){
-        super();
+
+    Sample1() {
+        this(10);// calling sample class one -arg constructor
+        System.out.println("Sample1 0-arg class constructor");
     }
 
     Sample1(int id) {
