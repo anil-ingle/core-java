@@ -4,14 +4,10 @@ class Sample1 {
     Sample1(){
         super();
     }
-//    Sample1() {
-//        this(10);// calling sample class one -arg constructor
-//        System.out.println("Sample1 0-arg class constructor");
-//    }
-//
-//    Sample1(int id) {
-//        System.out.println("Sample1 1-arg class constructor");
-//    }
+
+    Sample1(int id) {
+        System.out.println("Sample1 1-arg class constructor");
+    }
 }
 
 public class Employee1 extends Sample1 {
