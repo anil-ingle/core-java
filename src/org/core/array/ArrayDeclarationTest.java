@@ -23,10 +23,11 @@ public class ArrayDeclarationTest {
             System.out.println("enter value");
             a[i] =sc.nextInt();
         }
-// print
+         // print
 //        System.out.print(a[0]);
 //        System.out.print(a[1]);
 //        System.out.print(a[2]);
+        
         for(int i=0;i<a.length;i++){  // 4 time i[3]--->
             System.out.print(a[i]+" ");
         }

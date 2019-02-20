@@ -13,7 +13,7 @@ public class ExeptionUsingTryCatchTest2 {
         */
 
         // with handling code
-        
+
         System.out.println("line-1");
         System.out.println("line-2");
         try {
