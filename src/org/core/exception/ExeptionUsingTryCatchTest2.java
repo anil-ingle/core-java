@@ -13,11 +13,11 @@ public class ExeptionUsingTryCatchTest2 {
         */
 
         // with handling code
-
+        
+        System.out.println("line-1");
+        System.out.println("line-2");
         try {
-            System.out.println("line-1");
-            System.out.println("line-2");
-
+            System.out.println(10 / 0);
         } catch (ArithmeticException e) {
             System.out.println(10 * 2);
         }
