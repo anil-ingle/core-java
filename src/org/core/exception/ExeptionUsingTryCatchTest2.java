@@ -4,6 +4,7 @@ public class ExeptionUsingTryCatchTest2 {
 
     public static void main(String[] args) {
         // without handling code
+        // it makes abnormal termination
         /*
         System.out.println("line-1");
         System.out.println("line-2");
