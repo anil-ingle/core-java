@@ -8,4 +8,16 @@
 |Fundamental|[for loop ex2](https://github.com/krushidj/core-java/blob/master/src/org/core/fundamental/PrintOddNumberForTest.java)|[for loop ex3](https://github.com/krushidj/core-java/blob/master/src/org/core/fundamental/Print1to100ForTest.java)|[for loop test cases](https://github.com/krushidj/core-java/blob/master/src/org/core/fundamental/ForTestCase.java)|[nested for loop ex1](https://github.com/krushidj/core-java/blob/master/src/org/core/fundamental/NestedForTest.java)|
 |Fundamental|[nested for loop ex1](https://github.com/krushidj/core-java/blob/master/src/org/core/fundamental/NestedForPatternTest.java)|[do while loop](https://github.com/krushidj/core-java/blob/master/src/org/core/fundamental/DoWhileTest.java)|[do while test cases](https://github.com/krushidj/core-java/blob/master/src/org/core/fundamental/DoWhileTestCase.java)|
 
+## Operator in java
+ ### Java provides a rich set of operators to manipulate variables.
+### We can divide all the Java operators into the following groups −
+ #### Unary operator
+   - Increment and Decrement Operator (++, --)
+  #### Binary operator
+      -Arithmetic Operators
+      -Relational Operators
+      -Logical Operators
+      -Assignment Operators
+   #### Ternary Operator
+       -Ternary (conditional) Operator (condition?value1:value2)
 
