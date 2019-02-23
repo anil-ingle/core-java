@@ -13,8 +13,8 @@ public class OverloadingTypePromotionTest {
 
     public static void main(String[] args) {
         OverloadingTypePromotionTest test=new OverloadingTypePromotionTest();
-       //  test.m1(10.00);
-//        test.m1(10.02f);
-       // test.m1('v');
+       //  fundamental.m1(10.00);
+//        fundamental.m1(10.02f);
+       // fundamental.m1('v');
     }
 }

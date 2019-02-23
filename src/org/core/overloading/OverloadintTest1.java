@@ -17,9 +17,9 @@ public class OverloadintTest1 {
 
     public static void main(String[] args) {
         OverloadintTest1 test = new OverloadintTest1();
-         // test.add(20, 30); // calling  // argument
-         ///test.add(10,20,30); // calling
-            //test.add();// no argu
+         // fundamental.add(20, 30); // calling  // argument
+         ///fundamental.add(10,20,30); // calling
+            //fundamental.add();// no argu
 
     }
 }

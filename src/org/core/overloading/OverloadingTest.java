@@ -14,7 +14,7 @@ public class OverloadingTest {
           test.m1(20,30.00f);
           test.m1(20.00f,20);
           test.m1(20.00f,20);
-        //  test.m1(20,20.00);//CE
+        //  fundamental.m1(20,20.00);//CE
 
     }
 }
