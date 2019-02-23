@@ -12,12 +12,12 @@
  ### Java provides a rich set of operators to manipulate variables.
 ### We can divide all the Java operators into the following groups −
  #### Unary operator
-      - Increment and Decrement Operator (++, --)
+   - Increment and Decrement Operator (++, --)
   #### Binary operator
-      - Arithmetic Operators
-      - Relational Operators
-      - Logical Operators
-      - Assignment Operators
+    - Arithmetic Operators
+    - Relational Operators
+    - Logical Operators
+    - Assignment Operators
    #### Ternary Operator
-       - Ternary (conditional) Operator (condition?value1:value2)
+    - Ternary (conditional) Operator (condition?value1:value2)
 
