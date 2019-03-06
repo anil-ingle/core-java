@@ -25,13 +25,33 @@
    #### Misc Type
   - String concatenation operator
   
-  ##Exception Handling
+  ## Exception Handling
   
   - An unexpected, unwanted event that disturb the normal flow of program is called exception.
   - It is Highly recommended to handle the exception and main objective of exception handling is 'Graceful termination ' of program. 
   - Exception Handling means repairing an Exception we have to provide alternative way to continue res of the program normally is the concept of Exception Handling.
   
 ### Runtime Stack mechanism
+ - For every thread JVM will create runtime stack, each and every method call performed by that thread will be in corresponding stack.
+ - Each entry in the stack is called stack frame or activation record.
+ - After completing every method the corresponding stack will be removed.
+ - After completing all method call, stack become empty and that stack will destroyed by JVM just before terminating the thread.
+ ```java
+class Test
+{
+    public static void main(String[] args){
+        // calling m1()
+        m1();
+    }
+    public static void m1(){
+        // calling m2()
+        m2();
+    }
+    public static void m2(){
+        System.out.println("This is m2() method");
+    }
+}
+ ```
 ### Default Exception Handling in java
 ### Exception Hierarchy
   Here Java Exception Hierarchy 
