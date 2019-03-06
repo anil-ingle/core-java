@@ -55,6 +55,20 @@ class Test
    ![alt text](https://github.com/krushidj/core-java/blob/master/images/runtimestack.png)
 
 ### Default Exception Handling in java
+- Inside a method any Exception occurs the methos in which it raised is responsible to create Exception Object by including following information
+          1. name of exception.
+          2.description of Exception .
+          3. Location at which exception occurred (Stack trace)
+- After creating exception object, method handover that object into JVM.
+- JVM will be check whether the method contains any exception handling code or not, if the method doesen't contains exception handling code then JVM terminate that method abnormally and removes corresponding entry from stack.
+- Then JVM (after removing excption raised method) identify caller method and checks whether caller method contain any handling code or not.
+- If the caller method doesent handling code then JVM terminate that code method abnormally and removes corrsponding entry from stack.
+- This process will be continue until main methos  and if the main method also desnt contain handling code, then JVM terminate main mathod abnormally and remove corresponding entry from stack.
+- Then JVM handover responsibility of exception handling to default excption handler, which is part of JVM.
+- DEH(default exception handler) prints exception information in the following format and terminate program abnormally.
+ ------------------------------
+     Exception in thread "xxxx" name of exception :description
+                      stack trace....             
 ### Exception Hierarchy
   Here Java Exception Hierarchy 
   ![alt text](https://github.com/krushidj/core-java/blob/master/images/exception-hierarchy-in-java.png)
