@@ -24,4 +24,14 @@
   - Ternary (conditional) Operator (condition?value1:value2)
    #### Misc Type
   - String concatenation operator
-
+  
+  ##Exception Handling
+  
+  - An unexpected, unwanted event that disturb the normal flow of program is called exception.
+  - It is Highly recommended to handle the exception and main objective of exception handling is 'Graceful termination ' of program. 
+  - Exception Handling means repairing an Exception we have to provide alternative way to continue res of the program normally is the concept of Exception Handling.
+  
+### Runtime Stack mechanism
+### Default Exception Handling in java
+### Exception Hierarchy
+ 
