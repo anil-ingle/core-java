@@ -52,7 +52,8 @@ class Test
     }
 }
  ```
- 
+   ![alt text](https://github.com/krushidj/core-java/blob/master/images/exception-hierarchy-in-java.png)
+
 ### Default Exception Handling in java
 ### Exception Hierarchy
   Here Java Exception Hierarchy 
