@@ -52,6 +52,7 @@ class Test
     }
 }
  ```
+ 
 ### Default Exception Handling in java
 ### Exception Hierarchy
   Here Java Exception Hierarchy 
