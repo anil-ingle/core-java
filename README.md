@@ -34,4 +34,6 @@
 ### Runtime Stack mechanism
 ### Default Exception Handling in java
 ### Exception Hierarchy
+  Here Java Exception Hierarchy 
+  ![alt text](https://github.com/krushidj/core-java/blob/master/images/exception-hierarchy-in-java.png)
  
