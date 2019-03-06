@@ -61,9 +61,9 @@ class Test
           3. Location at which exception occurred (Stack trace)
 - After creating exception object, method handover that object into JVM.
 - JVM will be check whether the method contains any exception handling code or not, if the method doesen't contains exception handling code then JVM terminate that method abnormally and removes corresponding entry from stack.
-- Then JVM (after removing excption raised method) identify caller method and checks whether caller method contain any handling code or not.
+- Then JVM (after removing exception raised method) identify caller method and checks whether caller method contain any handling code or not.
 - If the caller method doesent handling code then JVM terminate that code method abnormally and removes corrsponding entry from stack.
-- This process will be continue until main methos  and if the main method also desnt contain handling code, then JVM terminate main mathod abnormally and remove corresponding entry from stack.
+- This process will be continue until main method  and if the main method also desnt contain handling code, then JVM terminate main mathod abnormally and remove corresponding entry from stack.
 - Then JVM handover responsibility of exception handling to default excption handler, which is part of JVM.
 - DEH(default exception handler) prints exception information in the following format and terminate program abnormally.
  ------------------------------
@@ -73,3 +73,77 @@ class Test
   Here Java Exception Hierarchy 
   ![alt text](https://github.com/krushidj/core-java/blob/master/images/exception-hierarchy-in-java.png)
  
+## checked and unchecked exception
+### Exception
+ Most of times exception are caused by our program and these are recoverable.
+ 
+### Error
+   Most of times error not caused by program due to lack of system resources and error are not recoverable.
+
+#### Checked Vs Unchecked Exception
+ - Un exception which which are checked by compiler to smooth execution od program are called checked exception.
+    -->eg. FileNotFoundException, 
+ - In our program if there is chance of raising checked exception then compiler says we should handle that checked exception (either by try catch or throws keyword ) otherwise we get compile time error
+ - Note: Whether it is checked or unchecked every exception occurred yet runtime only there is no chance exception occurred compile time.
+ - Note: RuntimeException and its child classes and Error and its child classes are <b> unchecked exception </b> except these remaining are <b> Checked </b>
+ 
+### Fully checked Vs Partially checked
+
+- A checked exception is said to be fully checked if and only if all its child classes are checked.
+- Eg. FileNotFoundException,InterruptedException,ServletException etc
+- A checked exception is said to be partially checked if and only if some of its child classes are unchecked.
+- Eg. Exception, Throwable.
+- Note: Only possible Partially checked exception in java are
+ 1. Exception 2. Throwable.
+       
+## Customized exception handling by using try catch
+-  It is highly recommended to handle exceptions.
+- The code which may raise an exception is called risky code and we have to define that code inside try  block and corresponding handling code define in catch block.
+    ```java 
+      try
+       {
+         Risky code
+       }
+      catch(Exception e)
+       {
+        Handling code
+       }
+         
+     ``` 
+See more example
+
+  ```java
+ class Test
+ {
+     public static void main(String[] args){
+        System.out.println("stmt1");
+        System.out.println(10/0);
+        System.out.println("stmt3");
+
+     }
+    
+ }
+  ```
+ it causes error
+   Exception in thread "main" java.lang.ArithmeticException: / by zero
+ 
+   ```java
+   class Test
+   {
+       public static void main(String[] args){
+          System.out.println("stmt1");
+          try{
+          System.out.println(10/0);
+          }catch (ArithmeticException ae){
+              System.out.println(10/1);
+          }
+          System.out.println("stmt3");
+  
+       }
+      
+   }
+   ```
+ output---
+ stmt1
+ 10
+ stmt3  
