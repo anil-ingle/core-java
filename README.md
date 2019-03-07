@@ -25,6 +25,53 @@
    #### Misc Type
   - String concatenation operator
   
+  ## OOP Concept
+ OOPS Concepts or Object Oriented Programming Concepts are very important. Without having an idea about OOPS concepts, you will not be able to design systems in the object-oriented programming model. following are main topic
+ - Data Hiding
+ - Abstraction
+ - Encapsulation
+ - Polymorphism(1.Overloading 2. Overriding)
+ - Constructor
+ - Coupling
+ - type casting
+ ### Data Hiding
+ - Outside person can't access our internal data or our internal data should not go directly this oop feature is hiding.
+ - After validation or identification outside person data.
+ - Eg: username and password we can able to access.
+ - Advantage of data hiding is security.
+ - Note: it is highly recommended variable as private  
+ ```java
+ class Test
+ {
+    private String  userName;
+    private String password;
+    private double balance;
+    public double getBalance(){
+        // after validation 
+        return this.balance;
+    }
+ }
+  ```
+  ### Abstraction
+  - Hiding internal implementation and just highlight set services we are offering is called abstraction.
+  - The main advantage are
+  1. Security
+  2. Enhancement
+  3. Maintainability easy
+ - By using interface abstract class we can implement abstraction.
+ ### Encapsulation
+  ```java
+   class Employee
+   {
+     data member;
+     +
+     methods(behavior)
+   }
+   ```
+ - The process of binding data member and corresponding methods into a single unit is called encapsulation.
+ - Every java class itself is an encapsulation 
+ - If any component follow data hiding and abstraction such type of component is said to be encapsulated component,
+ - Encapsulation=Data Hiding + Abstraction  
   ## Exception Handling
   
   - An unexpected, unwanted event that disturb the normal flow of program is called exception.
@@ -172,4 +219,4 @@ See more example
 - Hence main objective of throw keyword to handover our creation object to manually 
 - Best use throw keyword is user defined Exception.
 
-see Example [ here program](https://github.com/krushidj/core-java/blob/master/src/org/core/fundamental/PostIncPreIncOperatorTest.java)
+see Example [ here program](https://github.com/krushidj/core-java/blob/master/src/org/core/exception/TestThrow.java)
