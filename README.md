@@ -147,3 +147,23 @@ See more example
  stmt1
  10
  stmt3  
+ ## finally block
+ - finally is a block always associated with try to maintain cleanup code
+ - Java finally block is a block that is used to execute important code such as closing connection, stream etc.
+   
+
+ 
+ ````java
+ try
+ {
+     //risky code
+ }catch(Exception e)
+ {
+     // Handling code
+ }
+ finally{
+    // cleanup code
+ }
+ ````
+ ### throw keyword
+ - Sometime we create Exception object manually and handover to the jvm.for these we have to use throw keyword.
