@@ -167,3 +167,9 @@ See more example
  ````
  ### throw keyword
  - Sometime we create Exception object manually and handover to the jvm.for these we have to use throw keyword.
+   
+   ![alt text](https://github.com/krushidj/core-java/blob/master/images/throw%20keyword.png)
+- Hence main objective of throw keyword to handover our creation object to manually 
+- Best use throw keyword is user defined Exception.
+
+see Example [ here program](https://github.com/krushidj/core-java/blob/master/src/org/core/fundamental/PostIncPreIncOperatorTest.java)
