@@ -1,19 +1,34 @@
 package org.core.inheritance;
 
+class Parent {
+    public void m1() {
+        System.out.println("m1 method");
+    }
+}
+
+class Parent1 {
+}
+
+class Child extends Parent {
+    public void m2() {
+        System.out.println("m2() method");
+    }
+}
+
 public class Test {
     public static void main(String[] args) {
-        Parent p=new Parent();
+        Parent p = new Parent();
         p.m1();
-       //  p.m2(); // CE   can not find symbo m2 location Parent
-        Child c=new Child();
+        //  p.m2(); // CE   can not find symbo m2 location Parent
+        Child c = new Child();
         c.m1();
         c.m2();
 
-        Parent p1=new Child();
-         p1.m1();
+        Parent p1 = new Child();
+        p1.m1();
         // p1.m2();// CE  can not find symbo m2 location Parent
 
-       // Child c2=new Parent(); WE can't store reference child using Parent
+        // Child c2=new Parent(); WE can't store reference child using Parent
     }
 }
 

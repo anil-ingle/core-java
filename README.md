@@ -102,6 +102,8 @@
  - Data Hiding
  - Abstraction
  - Encapsulation
+ - IS-A Relationship
+ - HAS-A Relationship
  - Polymorphism(1.Overloading 2. Overriding)
  - Constructor
  - Coupling
@@ -144,6 +146,68 @@
  - Every java class itself is an encapsulation 
  - If any component follow data hiding and abstraction such type of component is said to be encapsulated component,
  - Encapsulation=Data Hiding + Abstraction  
+ ### IS-A Relationship
+ - It is also known as Inheritance (Parent Child Relationship). 
+ - The main Advantage of is-a relationship is code re-usability.
+ - By using extends keyword we can implements is-a relationship.
+ - Java class can't extends more than one class at a time hence java won't provide multiple inheritance support.
+ -   EX. class C extends B, C // CE :Class cannot extend multiple classes
+ - The most common method which are applicable for any type of child we have defined (write) in parent class.
+ -The specific (child required) method we have to defined(write) in child class.
+ - See Example see Example [ here program](https://github.com/krushidj/core-java/blob/master/src/org/core/inheritance/Test.java)
+ 
+ ### HAS-A Relationship
+- also know as composition/ aggregation
+-main advantage re-usability.
+-by using new keyword.
+- See Example see 1 [ here program](https://github.com/anil-webonise/core-java/blob/master/src/org/core/inheritance_has_a_relationship/Splender.java)
+- See Example see Example 2[ here program](https://github.com/anil-webonise/core-java/blob/master/src/org/core/inheritance_has_a_relationship/Pulser.java)
+### Polymorphism
+There are two types of polymorphism.
+1. Compile time polymorphism or Static  polymorphism or Method Overloading 
+
+    - If a class has multiple methods having same name but different in parameters, it is known as Method Overloading.
+    - If we have to perform only one operation, having same name of the methods increases the readability of the program.
+    - Suppose you have to perform addition of the given numbers but there can be any number of arguments, if you write the method such as a(int,int) for two parameters, and b(int,int,int) for three parameters then it may be difficult for you as well as other programmers to understand the behavior of the method because its name differs.
+    - So, we perform method overloading to figure out the program quickly.
+    - Method overloading increases the readability of the program.
+    - See Example see 1 [ here program](https://github.com/anil-webonise/core-java/blob/master/src/org/core/overloading/OverloadingTest.java) Example 2 [ here program](https://github.com/anil-webonise/core-java/blob/master/src/org/core/overloading/OverloadintTest1.java) Example 3 [ here program](https://github.com/anil-webonise/core-java/blob/master/src/org/core/overloading/OverloadingTypePromotionTest.java) Example 4 [ here program](https://github.com/anil-webonise/core-java/blob/master/src/org/core/overloading/OverloadingObjectTypeTest.java)
+    - See Example see Parent Child Level Overloading  [ here program](https://github.com/anil-webonise/core-java/blob/master/src/org/core/overloading/ParentChlidOverloadingTest.java)
+
+2. Runtime Polymorphism or Dynamic Polymorphism or Method Overriding
+    - If subclass (child class) has the same method as declared in the parent class, it is known as method overriding in Java.
+    - In other words, If a subclass provides the specific implementation of the method that has been declared by one of its parent class, it is known as method overriding.
+    - Method overriding is used to provide the specific implementation of a method which is already provided by its superclass.
+    - Method overriding is used for runtime polymorphism
+    - Rules:
+      1. The method must have the same name as in the parent class
+      2. The method must have the same parameter as in the parent class.
+      3. There must be an IS-A relationship (inheritance).
+    - See Example 1 [ here program](https://github.com/anil-webonise/core-java/blob/master/src/org/core/overring/Test1.java)
+    - See Example--> private method can not override  [ here program](https://github.com/anil-webonise/core-java/blob/master/src/org/core/overring/OverringExample2.java)
+    - See Example -->final method can not override  [ here program](https://github.com/anil-webonise/core-java/blob/master/src/org/core/overring/OverrideExample3.java  )
+    - See Example 4 [ here program](https://github.com/anil-webonise/core-java/blob/master/src/org/core/overring/OverrideExample4.java) Example 5 [ here program](https://github.com/anil-webonise/core-java/blob/master/src/org/core/overring/OverrideExample5.java)
+    - See Example 6 [ here program](https://github.com/anil-webonise/core-java/blob/master/src/org/core/overring/MOL6WithInheritance.java) Example 7 [ here program](https://github.com/anil-webonise/core-java/blob/master/src/org/core/overring/MOL7WithInheritance.java)
+
+### Constructor
+- Every time an object is created using new() keyword, at least one constructor is called. It calls a default constructor.
+- Note: It is called constructor because it constructs the values at the time of object creation. It is not necessary to write a constructor for a class. It is because java compiler creates a default constructor if your class doesn't have any.
+- Rules:
+  1. Name of class and name of constructor must be same.
+  2. return type concept not applicable for constructor.
+  3. Applicable modifier --> public, protected ,protected ,<default>
+  4. compiler generated default constructor  if and only if when programmer not write any constructor.
+  5. constructor 1st line required this() or super(), if u r not place any thing constructor automatically add super().
+  6. 1st line this() or super() but not both.
+ - See Example 1 [ here program](https://github.com/anil-webonise/core-java/blob/master/src/org/core/constructor/Employee.java) Constructor chaining Example 2 [ here program](https://github.com/anil-webonise/core-java/blob/master/src/org/core/constructor/Employee1.java) Example 2 [ here program](https://github.com/anil-webonise/core-java/blob/master/src/org/core/constructor/Example.java)
+
+
+ 
+  
+
+
+
+ 
   ## Exception Handling
   
   - An unexpected, unwanted event that disturb the normal flow of program is called exception.
