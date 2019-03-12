@@ -37,12 +37,12 @@
    - Example int[] a=new Int[50]; it means that it stored integer value up to 50 cell. i.e. a[0], a[1]
         ,a[2],....,a[49].
    - Advantage
-     1. Array are homogeneous data type.
-     2. Array are fixed in size.
-     3. We can represent huge no. of values by using single variable so that readability of code improved.
+     1. We can represent huge no. of values by using single variable so that readability of code improved.
    - Disadvantages
-     1. Fixed size. Can not be increased or decrease once declared.
-     2. Can store a single type of primitives only.
+     1. Array are fixed in size.
+     2. Array are homogeneous data type.
+     3. Fixed size. Can not be increased or decrease once declared.
+     3. Can store a single type of primitives only.
    #### one-dimensional array declaration
    - All following type are allowed
      1. int[]  x;     
