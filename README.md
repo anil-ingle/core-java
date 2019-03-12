@@ -24,7 +24,79 @@
   - Ternary (conditional) Operator (condition?value1:value2)
    #### Misc Type
   - String concatenation operator
+  ## Array in java(Language level)
+   ### Agenda
+   - Introduction
+   - Array Declaration
+   - Array Creation
+   - Array Initialization
+   - Array Declaration, Creation and Initialization on single line
+   - example
+   #### Introduction
+   - An array is a container that holds data (values) of one single type (similar data type). For example, you can create an array that can hold 100 values of int type.
+   - Example int[] a=new Int[50]; it means that it stored integer value up to 50 cell. i.e. a[0], a[1]
+        ,a[2],....,a[49].
+   - Advantage
+     1. Array are homogeneous data type.
+     2. Array are fixed in size.
+     3. We can represent huge no. of values by using single variable so that readability of code improved.
+   - Disadvantages
+     1. Fixed size. Can not be increased or decrease once declared.
+     2. Can store a single type of primitives only.
+   #### one-dimensional array declaration
+   - All following type are allowed
+     1. int[]  x;     
+     2. int  []x;
+     3. int  x[];
+   - At the declaration time e can't specify the size otherwise it cause CE.
+     1. int[6] x; --->CE
+     2. int[] x; ---> correct.      
+ #### rwo-dimensional array declaration
+  - All following type are allowed 
+    1. int[][] x;
+    2. int [][]x;
+    3. int[] []x;
+    4. int x[][];
+    5. int[] x[];
+    6.int []x[];
+  -similar 3-d also.
   
+  #### Creation of array
+- int a=new int[3]; -->creation of array.
+- Loop holes
+ 1. int[] a=new int[];---> CE: size not declared size must be declared
+ 2. int x=new int[0]; --> correct Bcoz size declared.
+ 3. int x=new int[-3];---CE: negative Array  Declaration.
+ 4. int x=new int['a']; ---> correct it consider ascii value it promotes upto int by our type promotion chart.
+- To specify array size allowed data type are byte, short , char and int only.
+- Here Array sample program including  array initialization, creation access etc. see Example [here program](https://github.com/krushidj/core-java/blob/master/src/org/core/array/ArrayDeclarationTest.java)
+ #### Array declaration, creation and Initialization in single line
+ - int x={10,20,30,40,50,60}; internally it creates like 
+ ````java
+  int[] x=new int[6];
+     x[0]=10;
+     x[1]=20;
+     x[2]=20;
+     x[3]=30;
+     x[4]=40;
+     x[5]=50;
+  ````    
+- char ch={'a','b','c','d'}; internally it creates like 
+  ````java
+    char[] ch=new char[4];
+       ch[0]='a';
+       ch[1]='b';
+       ch[2]='c';
+       ch[3]='d';
+  ````  
+ - Loop Holes
+   ````java
+      int[] x;
+           x={10,20,30,40,50}; // CE u can not change line while initialization, creation and declaration in single line.
+        
+    ```` 
+ - Here Some Example 1 Sum of Avg[here program](https://github.com/krushidj/core-java/blob/master/src/org/core/array/ArrayAvgSumTest.java) Example 2 Larger Value[here program](https://github.com/krushidj/core-java/blob/master/src/org/core/array/HighestValueArrayTest.java) Example 3 Selection Sort [here program](https://github.com/krushidj/core-java/blob/master/src/org/core/array/SelectionSortArrayTest.java)   
+   
   ## OOP Concept
  OOPS Concepts or Object Oriented Programming Concepts are very important. Without having an idea about OOPS concepts, you will not be able to design systems in the object-oriented programming model. following are main topic
  - Data Hiding

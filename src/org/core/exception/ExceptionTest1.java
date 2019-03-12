@@ -3,11 +3,12 @@ package org.core.exception;
 public class ExceptionTest1 {
     public static void main(String[] args) {
         System.out.println("ex1");
-        m1();// calling
+       // m1();// calling
+        System.out.println( 10/0);
         System.out.println("main end");
     }
 
-    public static void m1() {
+    /*public static void m1() {
 
         m2();// calling
 
@@ -23,7 +24,7 @@ public class ExceptionTest1 {
         }
 
         System.out.println("m2");
-    }
+    }*/
 }
 
 
